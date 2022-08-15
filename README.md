@@ -1,5 +1,5 @@
 # English-Grammerly-Correct</br>
-Finding the wrong words in the article by downloading all the English language words through the Hash Table data structure with Hash function for speed of processing. And produce a report on the wrong words with their correction and produce output   statement of the number of wrong words and thier count in the article and the speed of the program
+Finding the wrong words in the article by hashing all the English language words through the Hash Table data structure with Hash function for speed of processing. And produce a report on the wrong words with their correction and produce output   statement of the number of wrong words and thier count in the article and the speed of the program
 
 
 ### Implement a program that spell-checks a file, a la the below, using a hash table.</br>
@@ -63,7 +63,7 @@ Okay, next open up speller.c and spend some time looking over the code and comme
 
 Notice, incidentally, that we have defined the usage of speller to be</br>
 
-Usage: speller [dictionary] text
+# Usage: speller [dictionary] text
 where dictionary is assumed to be a file containing a list of lowercase words, one per line, and text is a file to be spell-checked. As the brackets suggest, provision of dictionary is optional; if this argument is omitted, speller will use dictionaries/large by default. In other words, running
 </br>
 $ ./speller text</br>
@@ -89,7 +89,7 @@ will eventually resemble the below.</br>
 
 Below’s some of the output you’ll see. For information’s sake, we’ve excerpted some examples of “misspellings.” And lest we spoil the fun, we’ve omitted our own statistics for now.</br>
 
-MISSPELLED WORDS</br>
+# MISSPELLED WORDS
 
 [...]</br>
 AHHHHHHHHHHHHHHHHHHHHHHHHHHHT</br>
@@ -115,7 +115,7 @@ Note that these times may vary somewhat across executions of speller, depending 
 
 Incidentally, to be clear, by “misspelled” we simply mean that some word is not in the dictionary provided.</br>
 
-Makefile</br>
+# Makefile</br>
 And, lastly, recall that make automates compilation of your code so that you don’t have to execute clang manually along with a whole bunch of switches. However, as your programs grow in size, make won’t be able to infer from context anymore how to compile your code; you’ll need to start telling make how to compile your program, particularly when they involve multiple source (i.e., .c) files, as in the case of this problem. And so we’ll utilize a Makefile, a configuration file that tells make exactly what to do. Open up Makefile, and you should see four lines:</br>
 
 The first line tells make to execute the subsequent lines whenever you yourself execute make speller (or just make).</br>
